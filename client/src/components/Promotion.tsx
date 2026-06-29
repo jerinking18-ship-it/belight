@@ -1,5 +1,6 @@
 import React from "react";
 import { useAppContext } from "../context/AppContext";
+import { PromoImage } from "../assets/assets";
 
 const Promotion: React.FC = () => {
   const { navigate } = useAppContext();
@@ -7,8 +8,8 @@ const Promotion: React.FC = () => {
     <div className="mt-16 ">
       <div className="md:grid md:grid-cols-2 max-w-4xl bg-[url('/src/assets/images/62624.jpg')] bg-no-repeat  mx-4 md:mx-auto rounded-xl  ">
         <img
-          src="src/assets/images/p.jpg"
-          alt="promotional"
+          src={PromoImage}
+          alt=""
           className="hidden md:block w-100 max-w-lg h-94 rounded-l-xl"
         />
         <div className="relative flex items-center justify-center ">
