@@ -8,7 +8,6 @@ const express_1 = __importDefault(require("express"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const cors_1 = __importDefault(require("cors"));
 const db_1 = __importDefault(require("./configs/db"));
-require("dotenv/config");
 const userRoute_1 = __importDefault(require("./routes/userRoute"));
 const sellerRoute_1 = __importDefault(require("./routes/sellerRoute"));
 const cloudinary_1 = __importDefault(require("./configs/cloudinary"));
