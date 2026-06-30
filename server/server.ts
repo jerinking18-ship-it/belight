@@ -19,7 +19,10 @@ const startServer = async () => {
     await connectDB();
     await connectCloudinary();
 
-    const allowedOrigins = ["http://localhost:5174"];
+    const allowedOrigins = [
+      "http://localhost:5173",
+      "https://belight1.vercel.app",
+    ];
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
     app.use(cookieParser());
