@@ -201,6 +201,12 @@ const Navbar: React.FC = () => {
             />
           </svg>
         </button>
+        <button
+          className="bg-primary2 text-white px-4 py-2 rounded-full text-sm"
+          onClick={() => navigate("/seller")}
+        >
+          admin
+        </button>
 
         {/* Mobile Menu */}
         <div
