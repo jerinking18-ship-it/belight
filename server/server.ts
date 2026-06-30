@@ -3,7 +3,6 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import connectDB from "./configs/db";
-import "dotenv/config";
 import userRouter from "./routes/userRoute";
 import sellerRouter from "./routes/sellerRoute";
 import connectCloudinary from "./configs/cloudinary";
