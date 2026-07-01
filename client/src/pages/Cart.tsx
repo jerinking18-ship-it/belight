@@ -68,14 +68,14 @@ const Cart = () => {
   }, [user]);
 
   return products.length > 0 && cartItems ? (
-    <div className="flex flex-col md:flex-row py-16 max-w-6xl w-full px-6 mx-auto">
-      <div className="flex-1 max-w-4xl">
-        <h1 className="text-3xl font-medium mb-6 text-sb">
+    <div className="flex flex-col md:flex-row py-16 max-w-6xl w-full px-6 mx-auto ">
+      <div className="flex-1 max-w-4xl bg-white p-8 rounded-lg">
+        <h1 className="text-3xl font-medium mb-6 text-sb ">
           Shopping Cart{" "}
           <span className="text-sm text-primary4">{getCartCount()}</span>
         </h1>
 
-        <div className="grid grid-cols-[2fr_1fr_1fr] text-primary4 text-base font-medium pb-3">
+        <div className="grid grid-cols-[2fr_1fr_1fr] text-primary4 text-base font-medium pb-3 ">
           <p className="text-left">Product Details</p>
           <p className="text-center">Subtotal</p>
           <p className="text-center">Action</p>
@@ -84,9 +84,9 @@ const Cart = () => {
         {cartArray.map((product, index) => (
           <div
             key={index}
-            className="grid grid-cols-[2fr_1fr_1fr]  items-center text-sm md:text-base font-medium pt-3"
+            className="grid grid-cols-[2fr_1fr_1fr]  items-center text-sm md:text-base font-medium pt-3 bg-bgw rounded-lg"
           >
-            <div className="flex items-center md:gap-6 gap-3">
+            <div className="flex items-center md:gap-6 gap-3 ">
               <div
                 onClick={() => {
                   navigate(
