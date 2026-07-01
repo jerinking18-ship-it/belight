@@ -9,6 +9,7 @@ import { MdLiveHelp } from "react-icons/md";
 import { IoSettings } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
+import { logoImage } from "../assets/assets";
 
 const Sidebar: React.FC = () => {
   const [open, setOpen] = useState<boolean | null>();
@@ -22,7 +23,7 @@ const Sidebar: React.FC = () => {
         >
           <div className="border border-b text-b px-3 py-2 h-15 flex justify-between items-center rounded bg-primary">
             <img
-              src="src/assets/images/logo.png"
+              src={logoImage}
               alt=""
               className={` ${open ? "w-14" : "w-0"} rounded`}
             />

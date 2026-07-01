@@ -1,4 +1,5 @@
 import React from "react";
+import { aboutImage } from "../assets/assets";
 
 const AboutUs: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const AboutUs: React.FC = () => {
         <div className="relative shadow-2xl shadow-primary rounded overflow-hidden shrink-0">
           <img
             className="max-w-md w-98 h-73  rounded-lg"
-            src="src/assets/images/nn.jpg"
+            src={aboutImage}
             alt=""
           />
         </div>

@@ -56,6 +56,10 @@ import { FaHeart } from "react-icons/fa";
 import promo from "./images/p.jpg";
 import banner from "./images/Oils.jpg";
 import logo from "./images/logo.png";
+import icon1 from "./images/fast.jpg";
+import icon2 from "./images/fresh.jpg";
+import icon3 from "./images/sa.jpg";
+import about from "./images/nn.jpg";
 
 export const assets = {
   oils1_jpg,
@@ -114,6 +118,10 @@ export const assets = {
 };
 export const bannerImage: string = banner;
 export const logoImage: string = logo;
+export const icon1Image: string = icon1;
+export const icon2Image: string = icon2;
+export const icon3Image: string = icon3;
+export const aboutImage: string = about;
 
 export interface CategoryType {
   text: string;
