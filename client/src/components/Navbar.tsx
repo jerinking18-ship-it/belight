@@ -9,6 +9,7 @@ import { useState } from "react";
 import LocationModal from "./LocationModal";
 import { AiFillThunderbolt } from "react-icons/ai";
 import toast from "react-hot-toast";
+import { logoImage } from "../assets/assets";
 
 const Navbar: React.FC = () => {
   const [deliveryTime, setDeliveryTime] = useState(17);
@@ -63,11 +64,7 @@ const Navbar: React.FC = () => {
     <div className="bg-[url('/src/assets/images/62624.jpg')] bg-no-repeat ">
       <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-30 py-4 border-b border-primary  relative transition-all">
         <NavLink to={"/"}>
-          <img
-            className="h-10 w-32 rounded "
-            src="src/assets/images/logo.png"
-            alt=""
-          />
+          <img className="h-10 w-32 rounded " src={logoImage} alt="" />
         </NavLink>
         <div
           onClick={() => setOpenLocation(true)}

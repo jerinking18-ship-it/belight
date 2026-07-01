@@ -1,4 +1,5 @@
 import React from "react";
+import { logoImage } from "../assets/assets";
 
 const Footer: React.FC = () => {
   const linkSections = [
@@ -27,11 +28,7 @@ const Footer: React.FC = () => {
       <div className="px-6 md:px-16 lg:px-24 xl:px-32 bg-[url('/src/assets/images/62624.jpg')] bg-no-repeat">
         <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-sb/55 ">
           <div>
-            <img
-              className="h-12 w-34 rounded"
-              src="src/assets/images/logo.png"
-              alt=""
-            />
+            <img className="h-12 w-34 rounded" src={logoImage} alt="" />
             <p className="max-w-[410px] mt-6 text-sb/75">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
               unde quaerat eveniet cumque accusamus atque qui error quo enim

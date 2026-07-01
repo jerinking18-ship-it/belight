@@ -53,8 +53,9 @@ import type { IconType } from "react-icons/lib";
 import { IoLeaf } from "react-icons/io5";
 import { TbCoinRupeeFilled } from "react-icons/tb";
 import { FaHeart } from "react-icons/fa";
-import promoImg from "./images/p.jpg";
+import promo from "./images/p.jpg";
 import banner from "./images/Oils.jpg";
+import logo from "./images/logo.png";
 
 export const assets = {
   oils1_jpg,
@@ -107,10 +108,12 @@ export const assets = {
   Bghoney,
   Bggrains,
   Bgseeds,
-  promoImg,
+  promo,
   banner,
+  logo,
 };
 export const bannerImage: string = banner;
+export const logoImage: string = logo;
 
 export interface CategoryType {
   text: string;
@@ -118,7 +121,7 @@ export interface CategoryType {
   Image: string;
   bgColors: string;
 }
-export const PromoImage: string = promoImg;
+export const PromoImage: string = promo;
 export const categories: CategoryType[] = [
   {
     text: "Oils",
