@@ -9,13 +9,10 @@ import Promotion from "../components/Promotion";
 import NewLetter from "../components/NewLetter";
 import About from "../components/About";
 import AboutUs from "../components/AboutUs";
+import { bannerImage } from "../assets/assets";
 
 const Home: React.FC = () => {
-  let slides: string[] = [
-    "/src/assets/images/Oils.jpg",
-    "/src/assets/images/Oils.jpg",
-    "/src/assets/images/Oils.jpg",
-  ];
+  let slides = [bannerImage, bannerImage, bannerImage];
   return (
     <div>
       <div className=" fixed left-0 top-0 h-screen">

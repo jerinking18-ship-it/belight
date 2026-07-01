@@ -54,6 +54,7 @@ import { IoLeaf } from "react-icons/io5";
 import { TbCoinRupeeFilled } from "react-icons/tb";
 import { FaHeart } from "react-icons/fa";
 import promoImg from "./images/p.jpg";
+import banner from "./images/Oils.jpg";
 
 export const assets = {
   oils1_jpg,
@@ -107,7 +108,9 @@ export const assets = {
   Bggrains,
   Bgseeds,
   promoImg,
+  banner,
 };
+export const bannerImage: string = banner;
 
 export interface CategoryType {
   text: string;
