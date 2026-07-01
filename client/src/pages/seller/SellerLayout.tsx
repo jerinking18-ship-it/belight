@@ -5,6 +5,7 @@ import { AiOutlineAppstoreAdd } from "react-icons/ai";
 import { MdFormatListBulletedAdd } from "react-icons/md";
 import { BsCartCheck } from "react-icons/bs";
 import toast from "react-hot-toast";
+import { logoImage } from "../../assets/assets";
 
 const SellerLayout: React.FC = () => {
   const { axios, navigate } = useAppContext();
@@ -61,11 +62,7 @@ const SellerLayout: React.FC = () => {
       {" "}
       <div className="flex items-center justify-between px-4 md:px-8 border-b border-primary py-3 bg-[url('/src/assets/images/62624.jpg')] bg-no-repeat  transition-all duration-300">
         <Link to={"/"}>
-          <img
-            className="h-10 w-32 rounded"
-            src="src/assets/images/logo.png"
-            alt=""
-          />
+          <img className="h-10 w-32 rounded" src={logoImage} alt="" />
         </Link>
         <div className="flex items-center gap-5 text-primary4">
           <p>Hi! Admin</p>
